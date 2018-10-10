@@ -1,0 +1,9 @@
+Options All -Indexes
+ErrorDocument 404 /sparesautomotriz.com/notfound.html
+ErrorDocument 403 /sparesautomotriz.com/accesodenegado.html
+
+RewriteBase /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
