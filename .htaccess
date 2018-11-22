@@ -1,6 +1,6 @@
-Options All -Indexes
-ErrorDocument 404 /sparesautomotriz.com/notfound.html
-ErrorDocument 403 /sparesautomotriz.com/accesodenegado.html
+Options -Indexes
+ErrorDocument 404 /sparesautomotriz/notfound.html
+ErrorDocument 403 /sparesautomotriz/accesodenegado.html
 
 RewriteBase /
 RewriteEngine On

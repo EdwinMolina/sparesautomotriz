@@ -153,7 +153,7 @@ form{
     width: 100%;
     max-width: 400px;
     margin: auto;
-    background: rgba(97,38,159,0.8);
+    background: #242F3B;
     padding: 20px;
     color: #fff;
     border-radius: 10px;
@@ -166,14 +166,20 @@ form input, form textarea, button{
     padding: 10px 0px;
     font-size: 16px;
 }
+form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
 button{
     cursor: pointer;
-    color: #562A9B;
-    background:#fff;
+    color: #fff;
+    background:#562A9B;
     border: none;
 }
 button:hover{
-    background: #f2f2f2;
+    background: rgba(97,38,159,0.8);
 }
 form input{
     color: #fff;
@@ -205,7 +211,9 @@ form input:valid ~ label{
     max-width: 400px;
     margin: auto;
 }
-
+.picture img{
+    width: 100%;
+}
 
 
 /*

@@ -7,13 +7,18 @@
 	<title>Spares Automotriz - Repuestos vehiculares</title>
 	<link rel="stylesheet" href="estilos/estilo.css">
 	<link rel="stylesheet" href="estilos/responsive.css">
-	<link rel="stylesheet" href="estilos/styles.css">
+	<link rel="stylesheet" href="estilos/fontello.css">
+    
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="sal/sal.css">
+    
 </head>
 <body>
     <header>
        <div class="header__content">
             <div class="header__logo">
-                <img src="img/Logo_positivo.png">
+                <a href="index.html"><img src="img/Logo_positivo.png"></a>
             </div>
             <input type="checkbox" id="check">
             <label class="header__toggle" for="check">
@@ -31,13 +36,36 @@
             </nav>
         </div>
     </header>
-    <section class="banner">
-       <div class="banner__img">
-           <img src="img/Fondo_banner.png">
-       </div>
-        <div class="banner__description">
-            <h2>Los mejores repuestos automotrices a nivel nacional</h2>
-            <a href="productos.html">Ver todo</a>
+    <section class="slider banner">
+        <div class="slide">
+            <img src="img/Fondo_banner.png">
+            <div class="description">
+                <h2
+                data-sal-duration="1100"
+                data-sal="slide-right"
+                data-sal-delay="500"
+                data-sal-easing ="ease-out-bounce">Los mejores repuestos automotrices a nivel nacional</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/fondo2.jpeg">
+            <div class="description">
+                <h2
+                data-sal-duration="1100"
+                data-sal="slide-right"
+                data-sal-delay="500"
+                data-sal-easing ="ease-out-bounce">Ùnicos en Nicaragua</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/fondo.jpeg">
+            <div class="description">
+                <h2
+                data-sal-duration="1100"
+                data-sal="slide-right"
+                data-sal-delay="500"
+                data-sal-easing ="ease-out-bounce">Los mejores repuestos originales</h2>
+            </div>
         </div>
     </section>
     <section class="sectionOne">
@@ -47,12 +75,12 @@
                     <input type="search" placeholder="Buscar">
                     <a href="#">Buscar</a>
                 </article>
-                <article class="aside2">
+                <article class="aside">
                     <div class="aside2__img">
                         <img src="img/PROMOCION.png">
                     </div>
                 </article>
-                <article class="aside3">
+                <article class="aside">
                     <div class="aside3__img">
                         <img src="img/Promocion2.jpg">
                     </div>
@@ -61,134 +89,123 @@
             <section class="two__column">
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/frenos.jpg">
+                       <img src="img/productos/motos/1.Escape_Yamaha.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Balinera Suziki</h3>
+                       <p>Loremsit  breve descripcion</p>
+                       <h2>C$ 400.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/rin.jpg">
+                       <img src="img/productos/buses/ciguenal.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Cigueñal de bus</h3>
+                       <p>Lorem ipsum repuesto autobus</p>
+                       <h2>C$ 800.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/tornillos.jpg">
+                       <img src="img/productos/carros/1.Amortiguador_Hyundai.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Amortiguador</h3>
+                       <p>Amortiguador para carro Hyundai</p>
+                       <h2>C$ 1400.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/motos/2.Cadena_motocilceta.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Cadena</h3>
+                       <p>Acero garbanizado</p>
+                       <h2>C$ 1200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/carros/2.Parachoques.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
+                       <h3>Parachoques</h3>
+                       <p>Parachoque de Hilux</p>
                        <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/carros/3.Motor_Chevrolet.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Motor para Chevrolet</h3>
+                       <p>Acero</p>
+                       <h2>C$ 9200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/motos/3.balinera_suzuki.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Balineras de Suzuki</h3>
+                       <p></p>
+                       <h2>C$ 7200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/motos/4.carburador.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Carburador</h3>
+                       <p>Carburador para yaris y suzuki</p>
+                       <h2>C$ 6200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/carros/4.Forros-para-Asientos-de-Carro.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Forros de asientos</h3>
+                       <p>Forros para tucson</p>
+                       <h2>C$ 8900.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/motos/5.embrague.jpg">
                    </div>
                    <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <h3>Embrague</h3>
+                       <p>embreague para motos NS</p>
+                       <h2>C$ 5200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
                    <div class="article__img">
-                       <img src="img/volante.png">
+                       <img src="img/productos/carros/descarga%20(1).jpg">
                    </div>
                    <div class="article__description">
                        <h3>Articulo</h3>
                        <p>Lorem ipsum dolor sit amet consectetur</p>
                        <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
-                   </div>
-                </article>
-                <article class="two__column__article">
-                   <div class="article__img">
-                       <img src="img/volante.png">
-                   </div>
-                   <div class="article__description">
-                       <h3>Articulo</h3>
-                       <p>Lorem ipsum dolor sit amet consectetur</p>
-                       <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
@@ -199,7 +216,7 @@
                        <h3>Articulo</h3>
                        <p>Lorem ipsum dolor sit amet consectetur</p>
                        <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
@@ -210,7 +227,7 @@
                        <h3>Articulo</h3>
                        <p>Lorem ipsum dolor sit amet consectetur</p>
                        <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
                 <article class="two__column__article">
@@ -221,7 +238,18 @@
                        <h3>Articulo</h3>
                        <p>Lorem ipsum dolor sit amet consectetur</p>
                        <h2>C$ 200.00</h2>
-                       <a href="#">Comprar</a>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
+                   </div>
+                </article>
+                <article class="two__column__article">
+                   <div class="article__img">
+                       <img src="img/volante.png">
+                   </div>
+                   <div class="article__description">
+                       <h3>Articulo</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur</p>
+                       <h2>C$ 200.00</h2>
+                       <a href="#"><span class="icon-basket"></span>Comprar</a>
                    </div>
                 </article>
             </section>
@@ -231,7 +259,7 @@
        <div class="footer__content">
            <div class="footer__icon">
                <span>
-                   <i class="icon-map-marker"></i>
+                   <i class="icon-location"></i>
                    <p>21 Revolution Street Managua,Nicaragua</p>
                </span>
                <span>
@@ -239,7 +267,7 @@
                    <a href="tel:+50589792735">+505 8888 8888</a>
                </span>
                <span>
-                   <i class="icon-envelope-o"></i>
+                   <i class="icon-mail"></i>
                    <a href="mailto:correo@correo.com">correo@company.com</a>
                </span>
            </div>
@@ -255,13 +283,28 @@
           <small>&copy; 2018 Spares Automotriz - Todos los derechos reservados</small>
       </span>
     </footer>
-<!--
-    <section class="asociation">
-        <div class="asociation__content">
-            <h2>¿Porque trabajar con nosotros?</h2>
-            <p>Por que somos la primera tienda online en Nicaragua, en asociacion con las mejores empresas automovilisticas del mundo</p>
-        </div>
-    </section>
--->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="sal/sal.js"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            autoplay:true,
+            speed: 600,
+            autoplaySpeed: 3000,
+            dots:false,
+            fade:false
+        });
+    
+        $('.btn-menu').click(function(){
+            $(this).toggleClass('on');
+            $('nav').toggleClass('active');
+            $('.menu li').toggleClass('opa');
+        });
+        
+        sal({
+          once:false  
+        });
+    </script>
 </body>
 </html>

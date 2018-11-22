@@ -1,17 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: arial;
+    font-family: 'Oswald', Arial;
 }
 header{
     width: 100%;
     margin: auto;
     
     height: 100px;
-    background: #fff;
 }
 .header__content{
     width: 100%;
@@ -151,6 +151,125 @@ header{
 .banner__description a:hover{
     background: #3E1E6C;
 }
+/*########SLIDE######*/
+.slider{
+    width: 100%;
+    height: 400px;
+}
+.slider .slide{
+    width: 100%;
+    height: 400px;
+    
+    position: relative;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.description h2{
+    width: 100%;
+    max-width: 450px;
+    text-transform: uppercase;
+    font-size: 38px;
+    width: 100%;
+}
+.descripcion p{
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+}
+.descripcion > a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: darkred;
+    
+    color: #fff;
+    width: 200px;
+    max-width:;
+    margin: auto;
+    margin-top: 30px;
+    
+    border-radius: 4px;
+    border: 1px solid darkred;
+    transition: .6s;
+    cursor: pointer;
+}
+#btn-esc{
+    background: transparent;
+    border: 1px solid #002866;
+}
+#btn-esc:hover{
+    background: #002866;
+}
+#btn-blue{
+    background:transparent;
+    border: 1px solid #002866;
+}
+#btn-blue:hover{
+    background:#002866;
+}
+#btn-green{
+    background: transparent;
+    border: 1px solid #006200;
+}
+#btn-green:hover{
+    background: #006200;
+}
+@media screen and (min-width:800px){
+    .slide .descripcion{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+}
+    .descripcion h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 100%;
+}
+    
+}
+.descripcion .social-banner a{
+    text-decoration: none;
+    display: inline-block;
+    
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+
+    font-size: 25px;
+}
+.descripcion a:hover{
+    background: transparent;
+    transition: .6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 * * *SECTIONONE * * */
 .sectionOne{
@@ -176,9 +295,13 @@ header{
     width: 100%;
 /*    border: 1px solid rgba(0,0,0,0.4);*/
     background: #fff;
+    
+    display: flex;
+    flex-wrap: wrap;
 }
 .aside{
     width: 100%;
+    max-width: 300px;
     margin: auto;
 }
 .aside input{
@@ -224,7 +347,7 @@ header{
     max-width: 170px;
     border: 1px solid rgba(0,0,0,0.1);
     margin: 5px;
-    height: 280px;
+    height: 290px;
 }
 .article__img{
     width: 100%;
@@ -237,11 +360,13 @@ header{
 }
 .article__description{
     padding: 8px;
+    position: relative;
 }
 .article__description h3{
     font-size: 20px;
     margin: 5px 0px;
     letter-spacing: 1px;
+    height: 32px;
 }
 .article__description p{
     color: #4A4A4A;
@@ -255,12 +380,22 @@ header{
 }
 .article__description a{
     text-decoration: none;
+    position: absolute;
+    left: 0;
     display: block;
     padding: 5px;
-    width: 50%;
+    width: 100%;
     background: #562A9B;
     color: #fff;
     text-align: center;
+    transition: all 0.5s;
+}
+.article__description a:hover{
+    transition: all 0.5s;
+    background: #3d1679;
+}
+.article__description .icon-basket{
+    margin-right: 10px;
 }
 /*
 * * *FOOTER* * * */
@@ -295,7 +430,7 @@ footer{
     display: inline-block;
     width: 35px;
     height: 35px;
-    line-height: 40px;
+    line-height: 35px;
     border-radius: 50%;
     text-align: center;
     background: #33383B;
@@ -322,7 +457,7 @@ footer{
     display: inline-block;
     width: 35px;
     height: 35px;
-    line-height: 40px;
+    line-height: 35px;
     border-radius: 50%;
     text-align: center;
     background: #33383B;
@@ -344,9 +479,6 @@ footer{
     background: #28A219;
     color: #fff;
 }
-
-
-
 .footer__span{
     display: block;
     width: 100%;
